@@ -18,12 +18,12 @@ keystone.init({
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
-	'views': 'templates/views',
+	'views': 'templates/views/elokapi',
 	'view engine': 'hbs',
 	
 	'custom engine': handlebars.create({
-		layoutsDir: 'templates/views/layouts',
-		partialsDir: 'templates/views/partials',
+		layoutsDir: 'templates/views/elokapi/layouts',
+		partialsDir: 'templates/views/elokapi/partials',
 		defaultLayout: 'default',
 		helpers: new require('./templates/views/helpers')(),
 		extname: '.hbs'
